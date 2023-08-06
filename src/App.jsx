@@ -1,9 +1,8 @@
-import "./slices/counterSlice";
 import { useSelector, useDispatch } from "react-redux";
 import { increase, decrease, reset } from "./slices/counterSlice";
 
 function App() {
-  const { count } = useSelector((store) => store.counterous);
+  const { count } = useSelector((store) => store.counterous); //connect with reducer of store.js
   const dispatch = useDispatch();
   return (
     <div>
